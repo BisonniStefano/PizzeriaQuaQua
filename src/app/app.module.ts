@@ -15,6 +15,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { PizzeEditorComponent } from './pages/pizze-editor/pizze-editor.component';
+import { OrderComponent } from './pages/order/order.component';
 
 
 @NgModule({
@@ -23,6 +28,11 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
     LandingPageComponent,
     NavbarComponent,
     ContactsComponent,
+    LoginComponent,
+    SigninComponent,
+    MenuComponent,
+    PizzeEditorComponent,
+    OrderComponent,
   ],
   imports: [
     BrowserModule,

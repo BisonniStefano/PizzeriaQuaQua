@@ -1,38 +1,81 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-dark bg-opacity-75">
-  <div class="container-fluid">
+<div class="container-fluid p-0 d-none d-lg-block">
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-opacity-75">
 
-    <a class="navbar-brand justify-content-start" href="#"><img src="assets/logo.jpg" alt="Papera" width="85" height="85"></a>
-
-    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-white"></span>
+    <div class="justify-content-start ms-3">
+      <a class="navbar-brand" href="#"><img src="assets/logo.jpg" alt="Papera" width="85" height="85"></a>
+    </div>
+  
+    <button class="navbar-toggler bg-primary ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-filter"></i>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link h6 text-white text-decoration-none border-start border-end  px-2 py-2" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/menu">MENÙ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/pizze-editor">LE TUE PIZZE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="#">PRENOTA UN TAVOLO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/order">ORDINA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/contacts">CONTATTI</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="collapse navbar-collapse justify-content-center" id="main-nav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link h6 text-white text-decoration-none border-start border-end  px-2 py-2" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/menu">MENÙ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/pizze-editor">LE TUE PIZZE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="#">PRENOTA UN TAVOLO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/order">ORDINA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h6 text-white text-decoration-none border-end  px-2 py-2" href="/contacts">CONTATTI</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="justify-content-end">
+      <a class="navbar-brand text-light" href="/login">Accedi <i class="bi bi-person-circle"></i></a>
     </div>
 
-    <a class="navbar-brand justify-content-end text-light" href="/login">Accedi <i class="bi bi-person-circle"></i></a>
+  </nav>
+</div>
+
+
+
+
+
+<div class="container-fluid p-0 d-lg-none">
+  <nav class="navbar fixed-top navbar-expand bg-primary">
+    <div class="container-fluid justify-content-center text-center">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#sidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar"><i class="bi bi-list" style="font-size: 50px;"></i></a>
+      </div>
+      
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/logo.jpg" alt="Papera" width="85" height="85"></a>
+      </div>
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/login"><i class="bi bi-person-circle" style="font-size: 50px;"></i></a>
+      </div>
+
+    </div>
+  </nav>
+</div>
+
+<div class="offcanvas offcanvas-start d-lg-none bg-light" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+  <div class="offcanvas-header bg-primary">
+    <h1 class="offcanvas-title fst-italic" id="sidebar-label">Pizzeria Qua Qua</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <a href="/menu" class="text-decoration-none h2">Menù</a><br><br>
+    <a href="/menu" class="text-decoration-none h2">Le tue pizze</a><br><br>
 
   </div>
-</nav>
+</div>
 
 
